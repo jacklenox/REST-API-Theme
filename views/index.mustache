@@ -1,0 +1,19 @@
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			{{# the-loop }}
+			{{# . }}
+			<article id="post-{{ ID }}" {{& post_class }}>
+				<header class="entry-header">
+					<h1 class="entry-title"><a href="{{ link }}" rel="bookmark">{{ title }}</a></h1>
+				</header>
+
+				<div class="entry-content">
+					{{& content }}
+				</div>
+			</article>
+			{{/ . }}
+			{{/ the-loop }}
+
+		</main>
+	</div>
