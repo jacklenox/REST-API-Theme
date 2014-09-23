@@ -9,6 +9,7 @@ Mustache_Autoloader::register();
  * AJAX url_to_postid handler
  */
 add_action( 'wp_ajax_nopriv_get_post_id', 'rest_api_theme_get_post_id' );
+add_action( 'wp_ajax_get_post_id', 'rest_api_theme_get_post_id' );
 
 function rest_api_theme_get_post_id() {
 	if ( isset( $_POST['data'] ) ) {

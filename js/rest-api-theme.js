@@ -3,8 +3,6 @@ jQuery(document).ready(function($) {
 	var app = app || {};
 	var templateUrl = script_data.templateUrl;
 
-	console.log( rest_api_theme_data.ajaxurl );
-
 	$(document).delegate("a", "click", function(evt) {
 		// Get the anchor href and protcol
 		var href = $(this).attr("href");

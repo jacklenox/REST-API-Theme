@@ -14,7 +14,6 @@ $language_attributes = ob_get_clean();
 ob_start();
 wp_title( '|', true, 'right' );
 $wp_title = ob_get_clean();
-error_log( $wp_title );
 ob_start();
 wp_head();
 $wp_head = ob_get_clean();
